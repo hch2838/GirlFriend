@@ -2,7 +2,7 @@ class GirlFrd :
     def __init__(self,girlF):
         self.girlF = girlF
 
-    def FoundG(self):
+    def FindG(self):
         if(self.girlF == True) :
             return None
         elif(self.girlF == False) :
@@ -11,7 +11,7 @@ class GirlFrd :
 class Wife(GirlFrd):
     def __init__(self,Wife):
         self.wife = Wife
-    def FoundG(self):    #오버라이딩
+    def FindG(self):    #오버라이딩
         if(self.wife == True) :
             return None
         elif(self.wife == False) :
@@ -19,9 +19,9 @@ class Wife(GirlFrd):
 
 gf = GirlFrd(False)
 wf = Wife(False)
-myGf = gf.FoundG()
-print("my girl friend : %s"%gf.FoundG())
-print("my Wife : %s"%wf.FoundG())
+myGf = gf.FindG()
+print("my girl friend : %s"%gf.FindG())
+print("my Wife : %s"%wf.FindG())
 
-if(gf.FoundG() == wf.FoundG()) :
+if(gf.FoundG() == wf.FindG()) :
     print("\nI'am Solo!!")
