@@ -23,5 +23,5 @@ myGf = gf.FindG()
 print("my girl friend : %s"%gf.FindG())
 print("my Wife : %s"%wf.FindG())
 
-if(gf.FoundG() == wf.FindG()) :
+if(gf.FindG() == wf.FindG()) :
     print("\nI'am Solo!!")
